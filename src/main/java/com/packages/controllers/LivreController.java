@@ -66,7 +66,7 @@ public class LivreController {
 	@Autowired
 	private LivreRepository livreRepository;
 
-	@GetMapping("/date-edition-between")
+	@GetMapping("/betweenDates")
 	public List<Livre> findByDateEditionBetween(
 			@RequestParam("start-date") @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate,
 			@RequestParam("end-date") @DateTimeFormat(pattern = "yyyy-MM-dd") Date endDate) {
